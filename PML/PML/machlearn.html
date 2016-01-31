@@ -327,7 +327,8 @@ trainall.time&lt;-proc.time()-ptm</code></pre>
 </div>
 <div id="compare-all-3-models-for-accuracy-and-compare-processing-times" class="section level2">
 <h2>Compare all 3 Models for Accuracy and Compare Processing Times</h2>
-<p>Model 2, Random Forest, has a slightly higher accuracy at 0.9788877 than Gradient Boosting at 0.9588054, but the former’s computation time is 22.7764924, 85.7142857, 22.8674298, NA, NA% of the latter so we’ll use this model.</p>
+<p>Model 2, Random Forest, has a slightly higher accuracy at 0.9788877 than Gradient Boosting at 0.9588054, but the former’s computation time is 23.0811808% of the latter so we’ll use this model.</p>
+<p>The out of sample error rate should be about 0.0211123</p>
 <table>
 <thead>
 <tr class="header">
@@ -342,23 +343,23 @@ trainall.time&lt;-proc.time()-ptm</code></pre>
 <tr class="odd">
 <td align="left">rpart</td>
 <td align="right">0.7188465</td>
-<td align="right">1.20</td>
+<td align="right">1.06</td>
 <td align="right">0.00</td>
-<td align="right">1.20</td>
+<td align="right">1.06</td>
 </tr>
 <tr class="even">
 <td align="left">gradient boosting</td>
 <td align="right">0.9588054</td>
-<td align="right">108.05</td>
-<td align="right">0.14</td>
-<td align="right">108.32</td>
+<td align="right">108.10</td>
+<td align="right">0.25</td>
+<td align="right">108.40</td>
 </tr>
 <tr class="odd">
 <td align="left">random forest</td>
 <td align="right">0.9788877</td>
-<td align="right">24.61</td>
-<td align="right">0.12</td>
-<td align="right">24.77</td>
+<td align="right">24.72</td>
+<td align="right">0.20</td>
+<td align="right">25.02</td>
 </tr>
 </tbody>
 </table>
